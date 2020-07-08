@@ -9,4 +9,4 @@ const Equipos = sequelize.define('equipos', {
     aforo:Sequelize.INTEGER
 });
 
-module.exports = equipos;
+module.exports = Equipos;

@@ -1,0 +1,24 @@
+{
+  "name": "equipos",
+  "version": "1.0.0",
+  "description": "equipos  de futbol de la comarca",
+  "main": "index.js",
+  "dependencies": {
+    "mariadb": "^2.4.1",
+    "sequelize": "^6.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patripatuca/api_futbol.git"
+  },
+  "author": "patricia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patripatuca/api_futbol/issues"
+  },
+  "homepage": "https://github.com/patripatuca/api_futbol#readme"
+}

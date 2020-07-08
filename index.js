@@ -54,7 +54,7 @@ app.put("/equipos/:id",function(req,res){
 //aquí se destruye la informacion y no quea registrada en nungun sitio//
 app.delete("/equipos/:id",function(req,res){
     const {id}=req.params;
-    Equipo.findOne({where:{id}})
+    Equipos.findOne({where:{id}})
     .then(equipo=>{ 
         if(equipo) {
             equipo.destroy()

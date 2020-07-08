@@ -9,7 +9,7 @@ app.get("/", function (req,res){
 
 //èsta es la parte que hace que fincione todo//
 app.get("/equipos", function (req, res) {
-    Poblacion.findAll()
+    Equipos.findAll()
     .then(equipos => res.json(equipos))
     .catch(err => res.json(err))
 })

@@ -23,7 +23,7 @@ app.get("/equipos/:id",function(req,res){
     .catch(err=>res.json(err))
 })
 //en esta parte es donde metemos los datos que le damos//
-app.post("/equipos",function(req,res){
+app.post("/equipos/:id",function(req,res){
     const equipo=req.body;
     Equipos.create(equipo)
     .then(equipo=> res.status(201).json(equipo))

@@ -23,7 +23,7 @@ app.get("/equipos/:id",function(req,res){
     .catch(err=>res.json(err))
 })
 //en esta parte es donde metemos los datos que le damos//
-app.post("/equipos/:id/",function(req,res){
+app.post("/equipos/:id",function(req,res){
     const equipo=req.body;
     Equipos.create(equipo)
     .then(equipo=> res.status(201).json(equipo))
@@ -34,7 +34,7 @@ app.post("/equipos/:id/",function(req,res){
 app.put("/equipos/:id",function(req,res){
     const {id}=req.params;
     const nuevosDatos=req.body;
-    Equipo.findOne({where:{id}})
+    Equipos.findOne({where:{id}})
     .then(equipo=>{
         if (equipo){
         //copia los campos de nuevosDatos al objeto original//

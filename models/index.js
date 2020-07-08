@@ -13,5 +13,5 @@ sequelize
 
   module.exports = {
       sequelize,
-      equipos
+      Equipos
   }

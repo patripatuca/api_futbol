@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 const sequelize = require('./db');
 
-const Poblacion = sequelize.define('poblacion', {
+const Equipos = sequelize.define('equipos', {
     id: {type: Sequelize.INTEGER, primaryKey: true},
     nombre: Sequelize.STRING,
     poblacion: Sequelize.STRING,

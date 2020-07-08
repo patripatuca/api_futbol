@@ -4,6 +4,7 @@
   "description": "equipos  de futbol de la comarca",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.17.1",
     "mariadb": "^2.4.1",
     "sequelize": "^6.3.0"
   },

@@ -1,5 +1,5 @@
 const sequelize = require('./db');
-const Poblacion = require('./poblaciones');
+const Poblacion = require('./equipos');
 
 sequelize
   .authenticate()
